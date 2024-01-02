@@ -1,9 +1,11 @@
 import { getLocaleEraNames } from "@angular/common";
 import { Component } from "@angular/core";
+import { IconComponentComponent } from "./icon-component.component";
 
 @Component({
   selector: "app-root",
   standalone: true,
+  imports: [IconComponentComponent],
   template: `
     <div class="h-full flex flex-col justify-center items-center bg-blue-50 relative">
       <img
@@ -26,7 +28,6 @@ import { Component } from "@angular/core";
                   'adipisicing',
                   'elit.',
                   'Ipsam,',
-                  'chcesz',
                   'expedita',
                   'culpa',
                   'velit',
@@ -44,133 +45,37 @@ import { Component } from "@angular/core";
         </div>
         <div class="m-2 p-4 w-1/2 pl-20">
           <div class="flex items-center">
-            <svg
-              class="h-8 w-8 text-blue-500"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              stroke-width="2"
-              stroke="currentColor"
-              fill="none"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            >
-              <path stroke="none" d="M0 0h24v24H0z" />
-              <polyline points="9 11 12 14 20 6" />
-              <path
-                d="M20 12v6a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h9"
-              />
-            </svg>
+            <app-icon-component />
             <p class="ml-2 text-xs">
               <span [innerHTML]="formatText(tick1, ['Lorem', 'ipsum'])"></span>
             </p>
           </div>
           <div class="flex items-center">
-            <svg
-              class="h-8 w-8 text-blue-500"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              stroke-width="2"
-              stroke="currentColor"
-              fill="none"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            >
-              <path stroke="none" d="M0 0h24v24H0z" />
-              <polyline points="9 11 12 14 20 6" />
-              <path
-                d="M20 12v6a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h9"
-              />
-            </svg>
+            <app-icon-component />
             <p class="ml-2 text-xs">
               <span [innerHTML]="formatText(tick2, ['amet', 'sit'])"></span>
             </p>
           </div>
           <div class="flex items-center">
-            <svg
-              class="h-8 w-8 text-blue-500"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              stroke-width="2"
-              stroke="currentColor"
-              fill="none"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            >
-              <path stroke="none" d="M0 0h24v24H0z" />
-              <polyline points="9 11 12 14 20 6" />
-              <path
-                d="M20 12v6a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h9"
-              />
-            </svg>
+            <app-icon-component />
             <p class="ml-2 text-xs">
               <span [innerHTML]="formatText(tick3, ['consectetur'])"></span>
             </p>
           </div>
           <div class="flex items-center">
-            <svg
-              class="h-8 w-8 text-blue-500"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              stroke-width="2"
-              stroke="currentColor"
-              fill="none"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            >
-              <path stroke="none" d="M0 0h24v24H0z" />
-              <polyline points="9 11 12 14 20 6" />
-              <path
-                d="M20 12v6a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h9"
-              />
-            </svg>
+            <app-icon-component />
             <p class="ml-2 text-xs">
               <span [innerHTML]="formatText(tick4, ['lorem', 'ipsum', 'dolor,'])"></span>
             </p>
           </div>
           <div class="flex items-center">
-            <svg
-              class="h-8 w-8 text-blue-500"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              stroke-width="2"
-              stroke="currentColor"
-              fill="none"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            >
-              <path stroke="none" d="M0 0h24v24H0z" />
-              <polyline points="9 11 12 14 20 6" />
-              <path
-                d="M20 12v6a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h9"
-              />
-            </svg>
+            <app-icon-component />
             <p class="ml-2 text-xs">
               <span [innerHTML]="formatText(tick5, [])"></span>
             </p>
           </div>
           <div class="flex items-center">
-            <svg
-              class="h-8 w-8 text-blue-500"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              stroke-width="2"
-              stroke="currentColor"
-              fill="none"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            >
-              <path stroke="none" d="M0 0h24v24H0z" />
-              <polyline points="9 11 12 14 20 6" />
-              <path
-                d="M20 12v6a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h9"
-              />
-            </svg>
+            <app-icon-component />
             <p class="ml-2 text-xs">
               <span [innerHTML]="formatText(tick6, [])"></span>
             </p>

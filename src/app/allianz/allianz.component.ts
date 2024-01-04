@@ -5,7 +5,7 @@ import { IconComponentComponent } from "../infobox/infoboxicon.component";
   selector: "app-allianz",
   standalone: true,
   imports: [IconComponentComponent],
-  styleUrls: ["./allianz.component.css"],
+  styleUrls: ["./allianz.component.scss"],
   template: `
     <div class="h-full flex flex-col justify-center items-center bg-green-50 relative">
       <h2 class="font-bold text-green-500 text-2xl p-5 z-10 neon-text">Allianz</h2>

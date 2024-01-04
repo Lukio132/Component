@@ -1,9 +1,8 @@
-import { getLocaleEraNames } from "@angular/common";
 import { Component } from "@angular/core";
-import { IconComponentComponent } from "./icon-component.component";
+import { IconComponentComponent } from "./infoboxicon.component";
 
 @Component({
-  selector: "app-root",
+  selector: "app-infobox",
   standalone: true,
   imports: [IconComponentComponent],
   template: `
@@ -85,7 +84,7 @@ import { IconComponentComponent } from "./icon-component.component";
     </div>
   `,
 })
-export class AppComponent {
+export class InfoboxComponent {
   title = "Warum die Bayerische (...)";
 
   paragraph1 =
